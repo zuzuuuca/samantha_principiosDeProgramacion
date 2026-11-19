@@ -40,11 +40,12 @@ palabra = 'banana'
 
 palabra = "banana"
 encontrar = "a"
-posicion = 0 + 1
-for lentra in palabra:
+posicion = 0
+for letra in palabra:
     if letra == encontrar:
-        print(f"la primera'{encontrar}'esta en la posicion: {posicion}"
+        print(f"la primera'{encontrar}'esta en la posicion: {posicion}")
         break
+    posicion = posicion + 1     
 la primera'a'esta en la posicion : 1
 
 
@@ -67,7 +68,7 @@ lista = [ [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5] ]
 # 4
 # 5
 
-mis_datos = [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5]
+mis_datos =[ [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5] ]
 for grupo in mis_datos:
     for numero in grupo:
         print(numero)
