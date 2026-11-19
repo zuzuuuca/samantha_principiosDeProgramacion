@@ -1,5 +1,9 @@
 1. Cómo podemos concatenar un número a un string? (.5 punto)
-se puede contatenar convirtiendo el numero a string al agregarle comillas, ya que las comillas hacen que Python lo identifique como string: "hola" + "2" = "hola2"
+se puede contatenar convirtiendo el numero a string al agregarle comillas, ya que las comillas hacen que Python lo identifique como string: 
+numero = 5
+variable = "hola"
+"hola" + str(numero)
+'hola5'
 
 2. De qué tipo son las variables justifica la respuesta (1.5 puntos)
  a = "1" : strign porque esta dentro de las comillas y Python lo identifica como texto mientras esta dentro de las comillas
@@ -14,11 +18,8 @@ se puede contatenar convirtiendo el numero a string al agregarle comillas, ya qu
  a. cambiar algunas letras por números
 
 	palabra = "hola" 
-	en "Ho14" :
-1- 1paso = palabra.replace("h","H") => "Hola"
-2- 2paso = 1paso.replace("l","1") => "Ho1a"
-3- resultado_final = 2paso.replace("a","4") => "Ho14"
-print(resultado_final) => Ho14
+    palabra.replace("o","0").replace("l","1")
+    ´h01a'
 
  b. remover espacios
 	palabra = "  hola"
@@ -34,10 +35,10 @@ print(resultado_final) => Ho14
 
 4. Explica qué hacen los métodos y da un ejemplo: (2 puntos)
 
- a. count() cuenta las veces que se llega a repetir una letra, palabra o texto dentro de una string. ejemplo: manzana.count(a) => 3
+ a. count() cuenta las veces que se llega a repetir una letra, palabra o texto dentro de una string. ejemplo: "manzana".count("a") => 3
  b. find() indica en que posición comienza la primera palabra o letra, cuando no la encuentra nos da -1. ejemplo: "mariposa".find("s") => 6
  c. isdigit() checa si el texto esta todo hecho solo de números y nos arroja true si es que son puros dígitos y false si es que hay letras o algún símbolo. ejemplo: "3000".isdigit() => true
- d. replace() encuentra una parte del texto y lo cambia por otro. ejemplo: "pala".remplace("c","p") => cala
+ d. replace() encuentra una parte del texto y lo cambia por otro. ejemplo: "manzana".replace("a","o") => 'monzono'
 
 5. Qué problema tiene declarar estas variables? (1.5 puntos)
  oración larga = 'hola mundo' => tiene espacio en el nombre y en Python no se puede usar espacio para nombrar variables y tiene tilde que es un símbolo no recomendado.
@@ -47,4 +48,4 @@ print(resultado_final) => Ho14
 Ejemplo: persona = "mariana"
          dulces = 4
 oracion = f"La niña {persona} se ha comido {dulces} dulces hoy"
-print(oracion) => La niña dulce se ha comido 4 dulces hoy
+print(oracion) => La niña mariana se ha comido 4 dulces hoy
